@@ -155,7 +155,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
               Text(' = $difference   '),
               
               IconButton.outlined(
-                icon: Icon(Icons.add),
+                icon: Icon(Icons.remove),
                 onPressed: () {
                     setState(() {
                       difference = firstMinusNum - secondMinusNum;
@@ -212,7 +212,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
               Text(' = $product   '),
               
               IconButton.outlined(
-                icon: Icon(Icons.add),
+                icon: Icon(Icons.clear),
                 onPressed: () {
                     setState(() {
                       product = firstMultiplyNum * secondMultiplyNum;
@@ -270,7 +270,8 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
               
           
               IconButton.outlined(
-                icon: Icon(Icons.add),
+                // wala ko may makita nga divide nga icon sir :'>
+                icon: Icon(Icons.safety_divider),
                 onPressed: () {
                     setState(() {
                       quotient = firstDivideNum ~/ secondDivideNum;
